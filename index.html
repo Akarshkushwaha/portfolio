@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Akarsh-Developer-Portfolio</title>
+  <style>
+
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      background-color: rgb(7, 1, 30);
+      color: white;
+      font-family: 'Poppins', sans serif;
+    }
+    nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 95px;
+      background-color: rgb(94, 10, 203);
+    }
+
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover{
+      text-decoration: none;
+      color: white;
+      font-size: 1.04rem;
+    }
+
+
+
+    .left{
+      font-size: 2rem;
+    }
+
+    .firstsection{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 110px 0;
+    }
+
+    .firstsection > div{
+      width: 33%;
+    }
+
+    .leftsection{
+      font-size: 2.2rem;;
+    }
+
+    .leftsection .buttons{
+      padding: 50px;
+    }
+
+    .leftsection .btn{
+      padding: 12px;
+      background:rgb(180, 153, 231);
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+
+    }
+
+    .rightsection img {
+      width: 90%;
+    }
+
+    .purple{
+      color: skyblue;
+    }
+
+    #element{
+      color: rgb(190, 178, 212)
+    }
+
+    .secondsection{
+      max-width: 83vw;
+      margin: 30px;
+    }
+
+    main hr{
+      border: 0;
+      background-color: aquamarine;
+      margin: 50px, 84px;
+      height: 1.2px;
+    }
+
+    .secondsection{
+      font-size: 1.5rem;
+    }
+
+    .text-gray{
+      color: gray;
+      font-size: 1rem;
+    }
+    .secondsection .box{
+      background: white;
+      width: vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+
+    .secondsection .vertical{
+      height: 85px;
+      width: 1px;
+      background-color: white;
+      margin: 0 130px;
+    }
+
+    .image-top{
+      width: 50px;
+      position: relative;
+      top: -49px;
+      left: -15px;
+    }
+
+    .image-pop{
+      width: 40px;
+      position: relative;
+      top: -58px;
+      left: -13px;
+    }
+
+    .vertical-title{
+      position: relative;
+      top: 75px;
+      width: 150px;
+      font-size: 14px;
+    }
+
+    .vertical-desc{
+      position: relative;
+      top: 50px;
+      color: gray;
+      width: 150px;
+      font-size: 9px;
+    }
+
+    .third-section{
+      display: flex;
+      margin: 50px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Akarsh Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, My name is <span class="purple">Akarsh</span>
+        <div>and I am a Passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="./images/programmer.png.png">
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="secondsection">
+      <span class="text-gray">What i have done so far</span>
+      <h1>Learning experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="./images/developer.png.png" alt="">
+          <div class="verticle-title">
+            HTML Developer
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-pop" src="./images/css-logo (1).png" alt="">
+          <div class="verticle-title">
+            CSS Developer
+          </div>
+        </div> 
+
+        <div class="vertical">
+          <img class="image-top" src="./images/javascript-logo.png" alt="">
+          <div class="verticle-title">
+            JAVASCRIPT Developer
+          </div>
+        </div> 
+
+        <div class="vertical">
+          <img class="image-top" src="./images/python-logo.png" alt="">
+          <div class="verticle-title">
+           PYTHON Developer
+          </div>
+        </div> 
+          
+      </div>
+  </main>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer', 'Python Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+  
+</body>
+</html>   
